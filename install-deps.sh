@@ -1,7 +1,8 @@
 #!/bin/sh
 
 echo '> Installing PIP packages...'
-pip3 install matplotlib opencv-python cryptography jupyter pandas
+pip3 install matplotlib opencv-python cryptography jupyter pandas jupyter_contrib_nbextensions scikit-image
+jupyter contrib nbextension install --user
 
 echo '> Installing apt packages...'
 apt-get update
